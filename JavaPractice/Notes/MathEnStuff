@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class MathEnStuff {
+
+    public static void main(String[] args) {
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
+        
+        // Prompt the user to enter their hourly rate
+        System.out.print("Enter your hourly rate: ");
+        double hourlyRate = scanner.nextDouble();
+        
+        // Define the number of hours worked per year
+        int hoursPerYear = 2000;
+        
+        // Calculate the yearly salary
+        double yearlySalary = hourlyRate * hoursPerYear;
+        
+        // Format and display the yearly salary
+        System.out.printf("Your yearly salary is $%.2f%n", yearlySalary);
+        
+        // Close the scanner
+        scanner.close();
+    }
+}
